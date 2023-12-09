@@ -1,0 +1,246 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.box-blue {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
+
+.hidden {
+  display: none;
+}
+
+header {
+  padding: 40px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-menu {
+  display: none;
+}
+
+aside {
+  display: none;
+}
+
+li {
+  display: inline;
+}
+
+ul {
+  display: inline;
+}
+
+nav {
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(0, 0%, 41%);
+  font-weight: 500;
+}
+
+a:hover {
+  color: black;
+}
+
+.nav-list {
+  margin-right: 30px;
+}
+
+.nav-buttons {
+  display: inline;
+}
+
+.nav-logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.register {
+  margin-left: 30px;
+  border: 1px solid hsl(0, 0%, 41%);
+  padding: 5px 15px;
+  border-radius: 8px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  width: 100%;
+  padding: 0 100px;
+}
+
+#hero-description,
+#hero-image {
+  width: 500px;
+}
+
+#hero-image > img {
+  width: 100%;
+}
+
+h1 {
+  font-size: 65px;
+}
+
+#hero-description > p {
+  width: 350px;
+  color: hsl(0, 0%, 41%);
+}
+
+button {
+  padding: 10px 15px;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: transparent;
+  color: black;
+}
+
+#hero-description > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.mobile-hero-image {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    overflow: visible;
+  }
+  .nav-logo-section > nav,
+  .nav-buttons {
+    display: none;
+  }
+
+  aside {
+    /* display: block; */
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  #aside-menu {
+    width: 250px;
+    height: 100%;
+    background-color: white;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .icon-menu {
+    display: block;
+  }
+
+  header {
+    padding: 20px;
+  }
+
+  .mobile-close-icon {
+    text-align: right;
+  }
+
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+  }
+
+  .mobile-nav-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .mobile-nav-buttons > a {
+    width: 90%;
+    text-align: center;
+  }
+
+  .register {
+    margin: 0;
+  }
+
+  .hero-menu {
+    display: none;
+  }
+
+  .mobile-hero-image {
+    display: block;
+    width: 90%;
+  }
+
+  .mobile-hero-image > img {
+    width: 100%;
+  }
+
+  #hero-image {
+    display: none;
+  }
+
+  main {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 85%;
+    padding: 0 20px;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  #hero-description {
+    width: 100%;
+  }
+
+  #hero-description > div {
+    width: 300px;
+    gap: 2px;
+  }
+
+  #hero-description > div > img {
+    width: 50px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  #hero-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #hero-description > p {
+    width: 100%;
+    text-align: center;
+  }
+}

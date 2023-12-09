@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="nav-logo-section">
+      <img src="./images/logo.svg" class="logo" />
+      <nav>
+        <ul>
+          <li class="nav-list"><a href="" id="feature-button">Features</a></li>
+          <li class="nav-list"><a href="">Company</a></li>
+          <li class="nav-list"><a href="">Careers</a></li>
+          <li class="nav-list"><a href="">About</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="nav-buttons">
+      <a href="">Login</a>
+      <a href="" class="register">Register</a>
+    </div>
+
+    <img src="./images/icon-menu.svg" alt="icon menu" id="mobile-menu-open" class="icon-menu">
+
+    <!-- Navigation for mobile view -->
+    <aside>
+      <div id="aside-menu">
+        <div class="mobile-close-icon"><img src="./images/icon-close-menu.svg" alt="close menu"
+            class="mobile-menu-close"></div>
+        <nav>
+          <ul class="mobile-nav">
+            <li class="nav-list"><a href="">Features</a></li> <!-- use button instead of link tags  -->
+            <li class="nav-list"><a href="">Company</a></li> <!-- use button instead of link tags  -->
+            <li class="nav-list"><a href="">Careers</a></li>
+            <li class="nav-list"><a href="">About</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-nav-buttons">
+          <a href="">Login</a>
+          <a href="" class="register">Register</a>
+        </div>
+      </div>
+    </aside>
+
+  </header>
+
+  <main>
+
+    <div class="box-blue hidden"></div>
+
+    <div class="mobile-hero-image">
+      <img src="./images/image-hero-mobile.png" alt="mobile hero">
+    </div>
+    <div id="hero-description">
+      <h1>Make remote work</h1>
+      <p>Get your team in sync, no matter your location. Streamline processes,
+        create team rituals, and watch productivity soar.</p>
+      <button>Learn more</button>
+      <div>
+        <img src="./images/client-databiz.svg" alt="databiz">
+        <img src="./images/client-audiophile.svg" alt="audiophile">
+        <img src="./images/client-meet.svg" alt="meet">
+        <img src="./images/client-maker.svg" alt="maker">
+      </div>
+    </div>
+    <div id="hero-image">
+      <img src="./images/image-hero-desktop.png" alt="hero image">
+    </div>
+  </main>
+
+  <!-- //importing javascript -->
+  <script src="./script.js"></script>
+  <script src="./app.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+  Coded by <a href="#">Your Name Here</a>.
+</div>
